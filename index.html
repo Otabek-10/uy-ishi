@@ -17,11 +17,18 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="px-[20px]">
+    <header class="">
       <div class="navbar container">
         <img class="logo" src="./images/logo.png" alt="" />
+
         <ul class="nav-links">
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
             <a href="">Bosh sahifa</a>
@@ -79,7 +86,7 @@
             aria-hidden="true"
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
           >
-            <div class="relative w-full max-w-md max-h-full">
+            <div class="relative w-full max-w-[400px] max-h-full">
               <!-- Modal content -->
               <div
                 class="relative form bg-[#1B2135] max-w-[400px] w-full text-white border border-white-800 p-5 rounded-[30px]"
@@ -175,7 +182,7 @@
         <!-- drawer component -->
         <div
           id="drawer-disable-body-scrolling"
-          class="fixed drawer-right top-0 left-0 pt-5 pl-3 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full text-white w-80"
+          class="fixed drawer-right top-0 left-0 pt-5 pl-3 z-40 h-screen overflow-y-auto transition-transform -translate-x-full text-white w-80"
           tabindex="-1"
           aria-labelledby="drawer-disable-body-scrolling-label"
         >
@@ -263,20 +270,22 @@
       </div>
     </header>
     <main>
-      <section class="bg-[#0B0E17]">
-        <div class="container flex items-center">
-          <div class="">
+      <section class="mb-[50px] bg-[#0B0E17]">
+        <div
+          class="py-[20px] max-[767px]:block container hero flex items-center w-full justify-between gap-[20px]"
+        >
+          <div class="w-[50%] max-[767px]:w-[100%]">
             <h1
               style="
                 font-family: Sora;
                 font-weight: 800;
                 font-style: ExtraBold;
-                font-size: 96px;
+
                 line-height: 105.6px;
                 letter-spacing: 0px;
                 vertical-align: middle;
               "
-              class="text-white"
+              class="h1 text-white text-[82px] max-[1270px]:text-[64px] max-[1200px]:text-[50px] max-[1150px]:text-[40px]"
             >
               KELAJAK KASBINI
               <span
@@ -284,7 +293,7 @@
                   font-family: Sora;
                   font-weight: 800;
                   font-style: ExtraBold;
-                  font-size: 96px;
+
                   line-height: 105.6px;
                   letter-spacing: 0px;
                   vertical-align: middle;
@@ -298,10 +307,773 @@
               IT, dizayn, marketing va ingliz tili — amaliy kurslar, real
               mentorlar, kafolatlangan natija. Ekspertlardan bilim oling.
             </p>
+            <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              class="text-white flex items-center gap-[10px] max-[487px]:hidden button-head bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-[18px] px-4 focus:outline-none"
+              style="margin: 20px 0"
+              type="button"
+            >
+              Bepul darsni boshlash
+              <img
+                class="max-w-[15px]"
+                src="./images/image copy 5.png"
+                alt=""
+              />
+            </button>
+            <div class="flex items-center gap-[10px]" style="margin-top: 10px">
+              <img
+                class="max-w-[150px]"
+                src="./images/image copy 3.png"
+                alt=""
+              />
+              <div>
+                <p class="text-white font-bold text-[18px]">
+                  12 000+ o'quvchi biz bilan
+                </p>
+                <div class="flex items-center gap-[5px]">
+                  <img
+                    class="max-w-[15px]"
+                    src="./images/image copy 4.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391]">4.9 reyting</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="">
-            <img class="max-w-[600px]" src="./images/hero.png" alt="" />
+
+          <img
+            class="w-[50%] max-[767px]:w-[100%]"
+            src="./images/hero.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="bg-[#0B0E17]" style="padding: 10px">
+        <div class="container">
+          <p class="text-[12px] text-[#CABEFF]">KURSLAR KATALOGI</p>
+          <h1 class="text-[57.6px] cards-h2 text-[#F2F4FA] font-bold mt-[16px]">
+            YO'NALISHINGIZNI TANLANG
+          </h1>
+
+          <div class="mb-4">
+            <ul
+              class="flex flex-wrap -mb-px gap-[8px] text-sm font-medium text-center"
+              id="default-styled-tab"
+              data-tabs-toggle="#default-styled-tab-content"
+              data-tabs-active-classes="text-purple hover:text-purple border-purple"
+              data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-default hover:border-brand"
+              role="tablist"
+            >
+              <li class="me-2" role="presentation">
+                <button
+                  style="
+                    border: 1px solid #ffffff0d;
+                    padding: 8px 24px;
+                    color: #a7afc6;
+                  "
+                  class="inline-block bg-[#141927] rounded-[9999px]"
+                  id="settings2-styled-tab"
+                  data-tabs-target="#styled-settings2"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings2"
+                  aria-selected="false"
+                >
+                  Hammasi
+                </button>
+              </li>
+              <li class="me-2" role="presentation">
+                <button
+                  style="
+                    border: 1px solid #ffffff0d;
+                    padding: 8px 24px;
+                    color: #a7afc6;
+                  "
+                  class="inline-block bg-[#141927] rounded-[9999px]"
+                  id="profile-styled-tab"
+                  data-tabs-target="#styled-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Dasturlash
+                </button>
+              </li>
+              <li class="me-2" role="presentation">
+                <button
+                  style="
+                    border: 1px solid #ffffff0d;
+                    padding: 8px 24px;
+                    color: #a7afc6;
+                  "
+                  class="inline-block bg-[#141927] rounded-[9999px]"
+                  id="dashboard-styled-tab"
+                  data-tabs-target="#styled-dashboard"
+                  type="button"
+                  role="tab"
+                  aria-controls="dashboard"
+                  aria-selected="false"
+                >
+                  Dizayn
+                </button>
+              </li>
+              <li class="me-2" role="presentation">
+                <button
+                  style="
+                    border: 1px solid #ffffff0d;
+                    padding: 8px 24px;
+                    color: #a7afc6;
+                  "
+                  class="inline-block bg-[#141927] rounded-[9999px]"
+                  id="settings-styled-tab"
+                  data-tabs-target="#styled-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings"
+                  aria-selected="false"
+                >
+                  Marketing
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  style="
+                    border: 1px solid #ffffff0d;
+                    padding: 8px 24px;
+                    color: #a7afc6;
+                  "
+                  class="inline-block p-4 bg-[#141927] rounded-[9999px]"
+                  id="contacts-styled-tab"
+                  data-tabs-target="#styled-contacts"
+                  type="button"
+                  role="tab"
+                  aria-controls="contacts"
+                  aria-selected="false"
+                >
+                  Contacts
+                </button>
+              </li>
+            </ul>
           </div>
+          <div id="default-styled-tab-content" style="margin-bottom: 50px">
+            <div
+              class="cards hidden p-4 grid gap-5 grid-cols-2"
+              style="margin-top: 20px"
+              id="styled-settings2"
+              role="tabpanel"
+              aria-labelledby="settings2-tab"
+            >
+              <div
+                class="p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+                style="margin-top: 20px"
+              >
+                <img
+                  style="
+                    border-top-left-radius: 24px;
+                    border-top-right-radius: 24px;
+                  "
+                  src="./images/card1.png"
+                  alt=""
+                />
+                <div style="margin: 10px 20px">
+                  <h2
+                    class="text-[#F2F4FA] text-[20px] font-bold"
+                    style="margin-bottom: 10px"
+                  >
+                    Frontend dasturlash: React & Next.js
+                  </h2>
+                  <div
+                    class="flex items-center gap-2"
+                    style="margin-bottom: 20px"
+                  >
+                    <img
+                      class="max-w-[30px] w-full"
+                      src="./images/icon1.png"
+                      alt=""
+                    />
+                    <p class="text-[#A7AFC6]">Aziz Karimov · EPAM</p>
+                  </div>
+                  <div
+                    class="flex border-b items-center gap-3"
+                    style="padding-bottom: 20px; color: #ffffff0d"
+                  >
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon1.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">32 dars</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon2.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">12 amaliyot</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon3.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                    </div>
+                  </div>
+                  <h2
+                    class="text-[white] text-[22px] font-bold"
+                    style="margin-top: 20px"
+                  >
+                    1 200 000 so'm
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+                style="margin-top: 20px"
+              >
+                <img
+                  style="
+                    border-top-left-radius: 24px;
+                    border-top-right-radius: 24px;
+                  "
+                  src="./images/card2.png"
+                  alt=""
+                />
+                <div style="margin: 10px 20px">
+                  <h2
+                    class="text-[#F2F4FA] text-[20px] font-bold"
+                    style="margin-bottom: 10px"
+                  >
+                    UI/UX Dizayn: Zero to Pro
+                  </h2>
+                  <div
+                    class="flex items-center gap-2"
+                    style="margin-bottom: 20px"
+                  >
+                    <img
+                      class="max-w-[30px] w-full"
+                      src="./images/icon2.png"
+                      alt=""
+                    />
+                    <p class="text-[#A7AFC6]">Malika Rahimova · Artel</p>
+                  </div>
+                  <div
+                    class="flex border-b items-center gap-3"
+                    style="padding-bottom: 20px; color: #ffffff0d"
+                  >
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon1.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">48 dars</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon2.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">24 amaliyot</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon3.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                    </div>
+                  </div>
+                  <h2
+                    class="text-[white] text-[22px] font-bold"
+                    style="margin-top: 20px"
+                  >
+                    1 200 000 so'm
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+                style="margin-top: 20px"
+              >
+                <img
+                  style="
+                    border-top-left-radius: 24px;
+                    border-top-right-radius: 24px;
+                  "
+                  src="./images/card3.png"
+                  alt=""
+                />
+                <div style="margin: 10px 20px">
+                  <h2
+                    class="text-[#F2F4FA] text-[20px] font-bold"
+                    style="margin-bottom: 10px"
+                  >
+                    Biznes sohasidagi professional ustozlar
+                  </h2>
+                  <div
+                    class="flex items-center gap-2"
+                    style="margin-bottom: 20px"
+                  >
+                    <img
+                      class="max-w-[30px] w-full"
+                      src="./images/icon3.png"
+                      alt=""
+                    />
+                    <p class="text-[#A7AFC6]">Malika Rahimova · Artel</p>
+                  </div>
+                  <div
+                    class="flex border-b items-center gap-3"
+                    style="padding-bottom: 20px; color: #ffffff0d"
+                  >
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon1.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">16 dars</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon2.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">20 amaliyot</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon3.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                    </div>
+                  </div>
+                  <h2
+                    class="text-[white] text-[22px] font-bold"
+                    style="margin-top: 20px"
+                  >
+                    1 200 000 so'm
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+                style="margin-top: 20px"
+              >
+                <img
+                  style="
+                    border-top-left-radius: 24px;
+                    border-top-right-radius: 24px;
+                  "
+                  src="./images/card4.png"
+                  alt=""
+                />
+                <div style="margin: 10px 20px">
+                  <h2
+                    class="text-[#F2F4FA] text-[20px] font-bold"
+                    style="margin-bottom: 10px"
+                  >
+                    Raqamli Marketing Strategiyasi
+                  </h2>
+                  <div
+                    class="flex items-center gap-2"
+                    style="margin-bottom: 20px"
+                  >
+                    <img
+                      class="max-w-[30px] w-full"
+                      src="./images/icon4.png"
+                      alt=""
+                    />
+                    <p class="text-[#A7AFC6]">Jasur Umarov · Payme</p>
+                  </div>
+                  <div
+                    class="flex border-b items-center gap-3"
+                    style="padding-bottom: 20px; color: #ffffff0d"
+                  >
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon1.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">28 dars</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon2.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">8 amaliyot</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <img
+                        class="max-w-[20px]"
+                        src="./images/cardicon3.png"
+                        alt=""
+                      />
+                      <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                    </div>
+                  </div>
+                  <h2
+                    class="text-[white] text-[22px] font-bold"
+                    style="margin-top: 20px"
+                  >
+                    1 200 000 so'm
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+            style="margin-top: 20px"
+            id="styled-profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <img
+              style="
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
+              "
+              src="./images/card1.png"
+              alt=""
+            />
+            <div style="margin: 10px 20px">
+              <h2
+                class="text-[#F2F4FA] text-[20px] font-bold"
+                style="margin-bottom: 10px"
+              >
+                Frontend dasturlash: React & Next.js
+              </h2>
+              <div class="flex items-center gap-2" style="margin-bottom: 20px">
+                <img
+                  class="max-w-[30px] w-full"
+                  src="./images/icon1.png"
+                  alt=""
+                />
+                <p class="text-[#A7AFC6]">Aziz Karimov · EPAM</p>
+              </div>
+              <div
+                class="flex border-b items-center gap-3"
+                style="padding-bottom: 20px; color: #ffffff0d"
+              >
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon1.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">32 dars</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon2.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">12 amaliyot</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon3.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                </div>
+              </div>
+              <h2
+                class="text-[white] text-[22px] font-bold"
+                style="margin-top: 20px"
+              >
+                1 200 000 so'm
+              </h2>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+            style="margin-top: 20px"
+            id="styled-dashboard"
+            role="tabpanel"
+            aria-labelledby="dashboard-tab"
+          >
+            <img
+              style="
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
+              "
+              src="./images/card2.png"
+              alt=""
+            />
+            <div style="margin: 10px 20px">
+              <h2
+                class="text-[#F2F4FA] text-[20px] font-bold"
+                style="margin-bottom: 10px"
+              >
+                UI/UX Dizayn: Zero to Pro
+              </h2>
+              <div class="flex items-center gap-2" style="margin-bottom: 20px">
+                <img
+                  class="max-w-[30px] w-full"
+                  src="./images/icon2.png"
+                  alt=""
+                />
+                <p class="text-[#A7AFC6]">Malika Rahimova · Artel</p>
+              </div>
+              <div
+                class="flex border-b items-center gap-3"
+                style="padding-bottom: 20px; color: #ffffff0d"
+              >
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon1.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">48 dars</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon2.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">24 amaliyot</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon3.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                </div>
+              </div>
+              <h2
+                class="text-[white] text-[22px] font-bold"
+                style="margin-top: 20px"
+              >
+                1 200 000 so'm
+              </h2>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+            style="margin-top: 20px"
+            id="styled-settings"
+            role="tabpanel"
+            aria-labelledby="settings-tab"
+          >
+            <img
+              style="
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
+              "
+              src="./images/card3.png"
+              alt=""
+            />
+            <div style="margin: 10px 20px">
+              <h2
+                class="text-[#F2F4FA] text-[20px] font-bold"
+                style="margin-bottom: 10px"
+              >
+                Biznes sohasidagi professional ustozlar
+              </h2>
+              <div class="flex items-center gap-2" style="margin-bottom: 20px">
+                <img
+                  class="max-w-[30px] w-full"
+                  src="./images/icon3.png"
+                  alt=""
+                />
+                <p class="text-[#A7AFC6]">Malika Rahimova · Artel</p>
+              </div>
+              <div
+                class="flex border-b items-center gap-3"
+                style="padding-bottom: 20px; color: #ffffff0d"
+              >
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon1.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">16 dars</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon2.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">20 amaliyot</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon3.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                </div>
+              </div>
+              <h2
+                class="text-[white] text-[22px] font-bold"
+                style="margin-top: 20px"
+              >
+                1 200 000 so'm
+              </h2>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 max-w-[599px] rounded-base bg-[#141927] rounded-[24px]"
+            id="styled-contacts"
+            role="tabpanel"
+            aria-labelledby="contacts-tab"
+          >
+            <img
+              style="
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
+              "
+              src="./images/card4.png"
+              alt=""
+            />
+            <div style="margin: 10px 20px">
+              <h2
+                class="text-[#F2F4FA] text-[20px] font-bold"
+                style="margin-bottom: 10px"
+              >
+                Raqamli Marketing Strategiyasi
+              </h2>
+              <div class="flex items-center gap-2" style="margin-bottom: 20px">
+                <img
+                  class="max-w-[30px] w-full"
+                  src="./images/icon4.png"
+                  alt=""
+                />
+                <p class="text-[#A7AFC6]">Jasur Umarov · Payme</p>
+              </div>
+              <div
+                class="flex border-b items-center gap-3"
+                style="padding-bottom: 20px; color: #ffffff0d"
+              >
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon1.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">28 dars</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon2.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">amaliyot</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <img
+                    class="max-w-[20px]"
+                    src="./images/cardicon3.png"
+                    alt=""
+                  />
+                  <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
+                </div>
+              </div>
+              <h2
+                class="text-[white] text-[22px] font-bold"
+                style="margin-top: 20px"
+              >
+                1 200 000 so'm
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#0B0E17]">
+        <div class="container">
+          <h2 class="text-white text-[42px] text-center font-bold">
+            QANDAY ISHLAYDI?
+          </h2>
+          <div class="grid grid-cols-4 gap-5">
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+            >
+              <img
+                class="max-w-[80px] w-full mx-auto"
+                src="./images/1.png"
+                alt=""
+              />
+              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <p class="text-white text-center">
+                O'zingizga mos yo'nalishni tanlang
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+            >
+              <img
+                class="max-w-[80px] w-full mx-auto"
+                src="./images/2.png"
+                alt=""
+              />
+              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <p class="text-white text-center">
+                O'zingizga mos yo'nalishni tanlang
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+            >
+              <img
+                class="max-w-[80px] w-full mx-auto"
+                src="./images/3.png"
+                alt=""
+              />
+              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <p class="text-white text-center">
+                O'zingizga mos yo'nalishni tanlang
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+            >
+              <img
+                class="max-w-[80px] w-full mx-auto"
+                src="./images/4.png"
+                alt=""
+              />
+              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <p class="text-white text-center">
+                O'zingizga mos yo'nalishni tanlang
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#0B0E17]" style="padding-top: 100px">
+        <div class="container">
+          <div class="bg-[#FFB95533] rounded-[9999px] max-w-[160px]">
+            <p class="text-[#FFB955] text-center text-[14px]">
+              EKSKLUZIV KURSLAR
+            </p>
+          </div>
+          <h2 class="">SUN'IY INTELLEKT: AMALIYOTCHILAR UCHUN.</h2>
         </div>
       </section>
     </main>

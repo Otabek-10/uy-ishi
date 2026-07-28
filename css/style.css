@@ -40,7 +40,7 @@ header {
 .nav-links li a {
   color: #a7afc6;
 }
-.drawer-right{
+.drawer-right {
   backdrop-filter: blur(8px);
   background-color: #10142193;
 }
@@ -96,4 +96,19 @@ header {
 
 .button-main {
   box-shadow: 0px 10px 30px 0px #7c5cff4d;
+}
+
+@media (max-width:767px) {
+  .hero{
+    display: block; 
+  }
+}
+
+@media (max-width:591px) {
+  .cards{
+    grid-template-columns: repeat(1,  1fr);
+  }
+  .cards-h2{
+    font-size:32px;
+  }
 }
