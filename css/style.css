@@ -98,17 +98,83 @@ header {
   box-shadow: 0px 10px 30px 0px #7c5cff4d;
 }
 
-@media (max-width:767px) {
-  .hero{
-    display: block; 
+@media (max-width: 767px) {
+  .hero {
+    display: block;
   }
 }
 
-@media (max-width:591px) {
-  .cards{
-    grid-template-columns: repeat(1,  1fr);
+@media (max-width: 591px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .cards-h2{
-    font-size:32px;
+  .cards-h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .oyoq {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .image-class {
+    max-width: 356px;
+  }
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .grids {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 890px) {
+  .service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 465px) {
+  .service {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .image-class {
+    max-width: 256px;
+    margin-top: 30px;
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .h4 {
+    font-size: 30px;
+  }.text{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-sect {
+    display: block;
+  }
+  .image-class {
+    max-width: 456px;
+  }
+  .font-text {
+    font-size: 35px;
   }
 }

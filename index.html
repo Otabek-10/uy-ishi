@@ -17,6 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1006,17 +1021,18 @@
         </div>
       </section>
       <section class="bg-[#0B0E17]">
-        <div class="container">
+        <div class="container bg-[#181B25]" style="padding: 120px 0">
           <h2 class="text-white text-[42px] text-center font-bold">
             QANDAY ISHLAYDI?
           </h2>
-          <div class="grid grid-cols-4 gap-5">
+          <div class="grid grid-cols-4 gap-5 service">
             <div
-              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
             >
               <img
-                class="max-w-[80px] w-full mx-auto"
+                class="w-[80px] h-[80px] flex justify-center"
                 src="./images/1.png"
+                style="margin-bottom: 5px"
                 alt=""
               />
               <h3 class="text-white font-bold">Kursni tanlang</h3>
@@ -1025,58 +1041,701 @@
               </p>
             </div>
             <div
-              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
             >
               <img
-                class="max-w-[80px] w-full mx-auto"
+                class="w-[80px] h-[80px] inline-block mx-auto"
                 src="./images/2.png"
+                style="margin-bottom: 5px"
                 alt=""
               />
-              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <h3 class="text-white font-bold">Bepul darsda qatnashing</h3>
               <p class="text-white text-center">
-                O'zingizga mos yo'nalishni tanlang
+                Platforma imkoniyatlarini ko'ring
               </p>
             </div>
             <div
-              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
             >
               <img
-                class="max-w-[80px] w-full mx-auto"
+                class="w-[80px] h-[80px] inline-block mx-auto"
                 src="./images/3.png"
+                style="margin-bottom: 5px"
                 alt=""
               />
-              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <h3 class="text-white font-bold">Amaliyot qiling</h3>
               <p class="text-white text-center">
-                O'zingizga mos yo'nalishni tanlang
+                Real loyihalar ustida ishlang
               </p>
             </div>
             <div
-              class="max-w-[400px] w-full text-center flex flex-col justify-center"
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
             >
               <img
-                class="max-w-[80px] w-full mx-auto"
+                class="w-[80px] h-[80px] inline-block mx-auto"
                 src="./images/4.png"
+                style="margin-bottom: 5px"
                 alt=""
               />
-              <h3 class="text-white font-bold">Kursni tanlang</h3>
+              <h3 class="text-white font-bold">Sertifikat oling</h3>
               <p class="text-white text-center">
-                O'zingizga mos yo'nalishni tanlang
+                Karyerangizni yangi bosqichga olib chiqing
               </p>
             </div>
           </div>
         </div>
       </section>
       <section class="bg-[#0B0E17]" style="padding-top: 100px">
+        <div class="container hero-sect flex items-center justify-evenly gap-5">
+          <div class="max-w-[824px]">
+            <div class="bg-[#FFB95533] rounded-[9999px] max-w-[160px]">
+              <p class="text-[#FFB955] text-center text-[14px]">
+                EKSKLUZIV KURSLAR
+              </p>
+            </div>
+            <h2 class="font-text text-white text-[48px] font-bold">
+              SUN'IY INTELLEKT: AMALIYOTCHILAR UCHUN.
+            </h2>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <img class="w-[20px]" src="./images/image copy 6.png" alt="" />
+                <p class="text-[#A7AFC6]">
+                  ChatGPT va Midjourney bilan ishlash
+                </p>
+              </div>
+            </div>
+            <div class="" style="margin-top: 10px; margin-bottom: 10px">
+              <div class="flex items-center gap-1">
+                <img class="w-[20px]" src="./images/image copy 6.png" alt="" />
+                <p class="text-[#A7AFC6]">
+                  Python orqali LLM modellarini sozlash
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <img class="w-[20px]" src="./images/image copy 6.png" alt="" />
+                <p class="text-[#A7AFC6]">
+                  Real-world AI loyihalar portfoliosi
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2" style="margin-top: 20px">
+              <div class="">
+                <img class="w-[60px]" src="./images/kun1.png" alt="" />
+              </div>
+              <div class="">
+                <img class="w-[60px]" src="./images/kun2.png" alt="" />
+              </div>
+              <div class="">
+                <img class="w-[60px]" src="./images/kun3.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between max-w-[384px]"
+              style="margin-top: 10px"
+            >
+              <p class="text-[#A7AFC6]">Joylar soni cheklangan</p>
+              <p class="text-[#A7AFC6]">18 / 25 band</p>
+            </div>
+            <img
+              class="max-w-[384px] w-full"
+              src="./images/image copy 7.png"
+              alt=""
+            />
+          </div>
+          <img
+            class="max-w-[456px] image-class w-full"
+            src="./images/section.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="bg-[#181B25]" style="padding: 30px 0px">
         <div class="container">
-          <div class="bg-[#FFB95533] rounded-[9999px] max-w-[160px]">
-            <p class="text-[#FFB955] text-center text-[14px]">
-              EKSKLUZIV KURSLAR
+          <h2
+            class="h4 text-white text-[50px] font-bold text-center"
+            style="margin: 10px 0"
+          >
+            MENTORLAR — AMALIYOTCHILAR.
+          </h2>
+          <div class="owl-carousel owl-theme">
+            <div class="item max-w-[640px] h-full">
+              <img src="./images/card1.1.png" alt="" />
+              <h3
+                class="text-white text-[18px] font-bold"
+                style="margin-top: 24px"
+              >
+                Aziz Karimov
+              </h3>
+              <p class="text-[#6B7391]">Senior Product Designer · EPAM</p>
+            </div>
+            <div class="item max-w-[640px] h-full">
+              <img class="rounded-[50px]" src="./images/card1.2.png" alt="" />
+              <h3
+                class="text-white text-[18px] font-bold"
+                style="margin-top: 24px"
+              >
+                Malika Rahimova
+              </h3>
+              <p class="text-[#6B7391]">UX Lead · Uzum Market</p>
+            </div>
+            <div class="item max-w-[640px] h-full">
+              <img src="./images/card1.3.png" alt="" />
+              <h3
+                class="text-white text-[18px] font-bold"
+                style="margin-top: 24px"
+              >
+                Jasur Umarov
+              </h3>
+              <p class="text-[#6B7391]">Marketing Director · Payme</p>
+            </div>
+            <div class="item max-w-[640px] h-full">
+              <img class="rounded-[50px]" src="./images/card1.4.png" alt="" />
+              <h3
+                class="text-white text-[18px] font-bold"
+                style="margin-top: 24px"
+              >
+                Farrux Aliyev
+              </h3>
+              <p class="text-[#6B7391]">CTO · TBC Bank Uzbekistan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[#0B0E17]"
+        style="
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border: 1px solid #ffffff1a;
+        "
+      >
+        <div class="container">
+          <h2 class="text-white text-[42px] text-center font-bold">
+            QANDAY ISHLAYDI?
+          </h2>
+          <div class="grid grid-cols-4 gap-5 service" style="margin-top: 20px">
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[170px] flex justify-center"
+                src="./images/image1.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+
+              <p
+                style="margin-top: 10px"
+                class="text-[16px] font-bold text-[#6B7391] text-center"
+              >
+                O'quvchi
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[100px] inline-block mx-auto"
+                src="./images/image2.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p
+                style="margin-top: 10px"
+                class="text-[16px] font-bold text-[#6B7391] text-center"
+              >
+                KURSNI TUGATADI
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[100px] inline-block mx-auto"
+                src="./images/image3.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p
+                style="margin-top: 10px"
+                class="text-[16px] font-bold text-[#6B7391] text-center"
+              >
+                ISHGA JOYLASHADI
+              </p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[75px] inline-block mx-auto"
+                src="./images/image4.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p
+                style="margin-top: 10px"
+                class="text-[16px] font-bold text-[#6B7391] text-center"
+              >
+                O'RTACHA REYTING
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#0B0E17]">
+        <div class="container" style="padding-top: 30px; padding-bottom: 30px">
+          <h2 class="text-[48px] font-bold text-white text-center">
+            O'QUVCHILAR NATIJALARI
+          </h2>
+          <div class="grid gap-3 grid-cols-3 grids">
+            <div
+              class="max-w-[389px] w-full"
+              style="
+                border: 1px solid #ffffff0f;
+                border-radius: 30px;
+                padding: 0 20px;
+              "
+            >
+              <div class="flex items-center gap-2" style="margin-top: 32px">
+                <div
+                  class="bg-[#1B2135] card w-[77px]"
+                  style="border: 1px solid #9491916a;   !important; border-radius: 9999px;"
+                >
+                  <p class="text-[#6B7391] text-center text-[12px]">SOTUVCHI</p>
+                </div>
+                <img class="w-[15px]" src="./images/icon.png" alt="" />
+                <div
+                  class="bg-[#CABEFF33] w-[107px]"
+                  style="border: 1px solid #cabeff4d; border-radius: 9999px"
+                >
+                  <p class="text-[#CABEFF] text-center text-[12px]">
+                    FRONTEND DEV
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[#A7AFC6]"
+                style="margin-top: 24px; font-style: italic"
+              >
+                "Bilimlab'da 6 oy o'qidim va hozir EPAM kompaniyasida
+                ishlayapman. Mentorimning yordami juda katta bo'ldi. Kurs
+                amaliyotga boy."
+              </p>
+              <div
+                class="flex items-center gap-2"
+                style="margin-top: 24px; margin-bottom: 36px"
+              >
+                <img class="w-[48px]" src="images/iconcard1.png" alt="" />
+                <div class="">
+                  <h4 class="text-white font-bold text-[14px]">
+                    SARVINOZ AZIMOVA
+                  </h4>
+                  <p class="text-[#6B7391] text-[12px]">23 yosh, Toshkent</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="max-w-[389px] w-full"
+              style="
+                border: 1px solid #ffffff0f;
+                border-radius: 30px;
+                padding: 0 20px;
+              "
+            >
+              <div class="flex items-center gap-2" style="margin-top: 32px">
+                <div
+                  class="bg-[#1B2135] card w-[77px]"
+                  style="border: 1px solid #9491916a;   !important; border-radius: 9999px;"
+                >
+                  <p class="text-[#6B7391] text-center text-[12px]">TALABA</p>
+                </div>
+                <img class="w-[15px]" src="./images/icon.png" alt="" />
+                <div
+                  class="bg-[#44EBBC33] w-[107px]"
+                  style="border: 1px solid #cabeff4d; border-radius: 9999px"
+                >
+                  <p class="text-[#44EBBC] text-center text-[12px]">
+                    UI/UX DIZAYNER
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[#A7AFC6]"
+                style="margin-top: 24px; font-style: italic"
+              >
+                "Noldan boshlab dizaynni o'rgandim. Portfoliomni tayyorlashda
+                mentorlarim har bir detalga e'tibor berishdi. Birinchi
+                haftadayoq frilans loyiha oldim."
+              </p>
+              <div
+                class="flex items-center gap-2"
+                style="margin-top: 24px; margin-bottom: 36px"
+              >
+                <img class="w-[48px]" src="images/iconcard2.png" alt="" />
+                <div class="">
+                  <h4 class="text-white font-bold text-[14px]">
+                    MADINA ALIYEVA
+                  </h4>
+                  <p class="text-[#6B7391] text-[12px]">23 yosh, Toshkent</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="max-w-[389px] w-full"
+              style="
+                border: 1px solid #ffffff0f;
+                border-radius: 30px;
+                padding: 0 20px;
+              "
+            >
+              <div class="flex items-center gap-2" style="margin-top: 32px">
+                <div
+                  class="bg-[#1B2135] card w-[77px]"
+                  style="border: 1px solid #9491916a; border-radius: 9999px;"
+                >
+                  <p class="text-[#6B7391] text-center text-[12px]">KURYER</p>
+                </div>
+                <img class="w-[15px]" src="./images/icon.png" alt="" />
+                <div
+                  class="bg-[#FFB95533] w-[107px]"
+                  style="border: 1px solid #cabeff4d; border-radius: 9999px"
+                >
+                  <p class="text-[#FFB955] text-center text-[12px]">
+                    SMM MANAGER
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-[#A7AFC6]"
+                style="margin-top: 24px; font-style: italic"
+              >
+                "Hayotim butkul o'zgardi. Marketingni o'rganish orqali hozirda
+                yirik agentlikda ish boshladim. Bilimlab — bu shunchaki kurs
+                emas, bu imkoniyat."
+              </p>
+              <div
+                class="flex items-center gap-2"
+                style="margin-top: 24px; margin-bottom: 36px"
+              >
+                <img class="w-[48px]" src="images/iconcard3.png" alt="" />
+                <div class="">
+                  <h4 class="text-white font-bold text-[14px]">
+                    OTABEK RASULOV
+                  </h4>
+                  <p class="text-[#6B7391] text-[12px]">25 yosh, Toshkent</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section>
+        <div class="container">
+          <div
+            id="accordion-color"
+            data-accordion="collapse"
+            class="rounded-base border border-default overflow-hidden shadow-xs"
+          >
+            <h2 id="accordion-color-heading-1 ">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-default gap-3"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-1"
+              >
+                <span>What is Flowbite?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-1"
+              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  Flowbite is an open-source library of interactive components
+                  built on top of Tailwind CSS including buttons, dropdowns,
+                  modals, navbars, and more.
+                </p>
+                <p class="text-body">
+                  Check out this guide to learn how to
+                  <a
+                    href="/docs/getting-started/introduction/"
+                    class="text-fg-brand hover:underline"
+                    >get started</a
+                  >
+                  and start developing websites even faster with components on
+                  top of Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-color-heading-2">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-fg-brand hover:bg-brand-softer gap-3"
+                data-accordion-target="#accordion-color-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-2"
+              >
+                <span>Is there a Figma file available?</span>
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-2"
+              class="hidden  border border-s-0 border-e-0 border-t-0 border-b-default"
+              aria-labelledby="accordion-color-heading-2"
+            >
+              <div class="p-4 md:p-5">
+                <p class="mb-2 text-body">
+                  Flowbite is first conceptualized and designed using the Figma
+                  software so everything you see in the library has a design
+                  equivalent in our Figma file.
+                </p>
+                <p class="text-body">
+                  Check out the
+                  <a
+                    href="https://flowbite.com/figma/"
+                    class="text-fg-brand hover:underline"
+                    >Figma design system</a
+                  >
+                  based on the utility classes from Tailwind CSS and components
+                  from Flowbite.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-color-heading-3">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-fg-brand hover:bg-brand-softer gap-3"
+                data-accordion-target="#accordion-color-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-color-body-3"
+              >
+                <span
+                  >What are the differences between Flowbite and Tailwind
+                  UI?</span
+                >
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-color-body-3"
+              class="hidden"
+              aria-labelledby="accordion-color-heading-3"
+            >
+              <div
+                class="p-4 md:p-5 border border-t-default border-b-0 border-x-0"
+              >
+                <p class="mb-2 text-body">
+                  The main difference is that the core components from Flowbite
+                  are open source under the MIT license, whereas Tailwind UI is
+                  a paid product. Another difference is that Flowbite relies on
+                  smaller and standalone components, whereas Tailwind UI offers
+                  sections of pages.
+                </p>
+                <p class="mb-2 text-body">
+                  However, we actually recommend using both Flowbite, Flowbite
+                  Pro, and even Tailwind UI as there is no technical reason
+                  stopping you from using the best of two worlds.
+                </p>
+                <p class="mb-2 text-body">
+                  Learn more about these technologies:
+                </p>
+                <ul class="ps-5 text-body list-disc">
+                  <li>
+                    <a
+                      href="https://flowbite.com/pro/"
+                      class="text-fg-brand hover:underline"
+                      >Flowbite Pro</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindui.com/"
+                      rel="nofollow"
+                      class="text-fg-brand hover:underline"
+                      >Tailwind UI</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="bg-[#0B0E17]" style="padding-bottom: 30px">
+        <div
+          class="container bg-[#181B25]"
+          style="padding-top: 96px; padding-bottom: 96px"
+        >
+          <h2 class="text-[60px] text text-center text-white font-bold">
+            BIRINCHI QADAMNI HOZIR TASHLANG.
+          </h2>
+          <p class="text-[#A7AFC6] text-center text-[18px]">
+            Birinchi dars — mutlaqo bepul. Hozir ro'yxatdan o'ting va o'z
+            kelajagingizni qurishni boshlang.
+          </p>
+          <button
+            data-modal-target="authentication-modal"
+            data-modal-toggle="authentication-modal"
+            class="text-white flex items-center gap-[10px] max-[487px]:hidden button-head bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-[18px] px-4 focus:outline-none"
+            style="
+              margin: 30px 0;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 15px 10px;
+            "
+            type="button"
+          >
+            Bepul darsni boshlash
+            <img class="max-w-[15px]" src="./images/image copy 5.png" alt="" />
+          </button>
+          <div
+            class="bg-[#44EBBC1A] w-[187px] h-[28px] flex items-center flex-col justify-center"
+            style="
+              border: 1px solid #44ebbc33;
+              border-radius: 9999px;
+              margin-right: auto;
+              margin-left: auto;
+            "
+          >
+            <p class="text-[#44EBBC] text-center text-[12px]">
+              ● Bu hafta 214 kishi qo'shildi
             </p>
           </div>
-          <h2 class="">SUN'IY INTELLEKT: AMALIYOTCHILAR UCHUN.</h2>
         </div>
       </section>
     </main>
+    <footer class="bg-[#0B0E17]">
+      <div class="container oyoq grid grid-cols-4 gap-4">
+        <div class="max-w-[293px]">
+          <img class="max-w-[200px]" src="./images/logoblack.png" alt="" />
+          <p class="text-[#A7AFC6]" style="margin: 15px 0px;">
+            Markaziy Osiyodagi eng zamonaviy onlayn ta'lim platformasi.
+          </p>
+          <div class="flex items-center gap-2">
+            <img class="w-[50px]" src="./images/foot1.png" alt="" />
+            <img class="w-[50px]" src="./images/foot2.png" alt="" />
+            <img class="w-[50px]" src="./images/foot3.png" alt="" />
+          </div>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Platforma</p>
+            <li class="text-[#A7AFC6]">Kurslar</li>
+            <li class="text-[#A7AFC6]">Mentorlar</li>
+            <li class="text-[#A7AFC6]">Sertifikatlar</li>
+            <li class="text-[#A7AFC6]">Hamkorlik</li>
+          </ul>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Yordam</p>
+            <li class="text-[#A7AFC6]">Bog'lanish</li>
+            <li class="text-[#A7AFC6]">FAQ</li>
+            <li class="text-[#A7AFC6]">To'lovlar</li>
+            <li class="text-[#A7AFC6]">Shartlar</li>
+          </ul>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Kompaniya</p>
+            <li class="text-[#A7AFC6]">Biz haqimizda</li>
+            <li class="text-[#A7AFC6]">Vakansiyalar</li>
+            <li class="text-[#A7AFC6]">Blog</li>
+            <li class="text-[#A7AFC6]">Maxfiylik siyosati</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
