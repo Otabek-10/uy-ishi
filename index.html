@@ -42,35 +42,36 @@
   <body>
     <header class="">
       <div class="navbar container">
-        <img class="logo" src="./images/logo.png" alt="" />
-
+        <a href="./index.html"
+          ><img class="logo" src="./images/logo.png" alt=""
+        /></a>
         <ul class="nav-links">
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
-            <a href="">Bosh sahifa</a>
+            <a href="./index.html ">Bosh sahifa</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
             ></span>
           </li>
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
-            <a href="">Kurslar</a>
+            <a href="./pages/kurs.html">Kurslar</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
             ></span>
           </li>
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
-            <a href="">Mentorlar</a>
+            <a href="./pages/men.html">Mentorlar</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
             ></span>
           </li>
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
-            <a href="">Narxlar</a>
+            <a href="./pages/narx.html">Narxlar</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
             ></span>
           </li>
           <li class="nav-li relative group duration-[0.3s] text-[19px]">
-            <a href="">Blog</a>
+            <a href="./pages/blog.html">Blog</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
             ></span>
@@ -80,7 +81,7 @@
         <div class="icons">
           <img
             class="icon max-[487px]:hidden"
-            src="images/iconheeader.png"
+            src="./images/iconheeader.png"
             alt=""
           />
 
@@ -235,7 +236,7 @@
               style="margin-top: 20px"
             >
               <li
-                class="relative text-[16px] group nav-li duration-[0.4s] max-w-[76px]"
+                class="relative text-[12px] group nav-li duration-[0.4s] max-w-[76px]"
                 style="margin-top: 10px"
               >
                 <a href="">Bosh sahifa</a>
@@ -244,7 +245,7 @@
                 ></span>
               </li>
               <li
-                class="relative text-[16px] group nav-li duration-[0.3s] max-w-[48px]"
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[48px]"
                 style="margin-top: 10px"
               >
                 <a href="">Kurslar</a>
@@ -253,7 +254,7 @@
                 ></span>
               </li>
               <li
-                class="relative text-[16px] group nav-li duration-[0.3s] max-w-[62px]"
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[62px]"
                 style="margin-top: 10px"
               >
                 <a href="">Mentorlar</a>
@@ -262,7 +263,7 @@
                 ></span>
               </li>
               <li
-                class="relative text-[16px] group nav-li duration-[0.3s] max-w-[48px]"
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[48px]"
                 style="margin-top: 10px"
               >
                 <a href="">Narxlar</a>
@@ -271,7 +272,7 @@
                 ></span>
               </li>
               <li
-                class="relative text-[16px] group nav-li duration-[0.3s] max-w-[30px]"
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[30px]"
                 style="margin-top: 10px"
               >
                 <a href="">Blog</a>
@@ -295,12 +296,16 @@
                 font-family: Sora;
                 font-weight: 800;
                 font-style: ExtraBold;
+                text-align: left;
 
                 line-height: 105.6px;
-                letter-spacing: 0px;
                 vertical-align: middle;
+
+                @media (max-width: 1150px) {
+                  line-height: 20.6px;
+                }
               "
-              class="h1 text-white text-[82px] max-[1270px]:text-[64px] max-[1200px]:text-[50px] max-[1150px]:text-[40px]"
+              class="h1 text-white text-[82px] max-[1270px]:text-[64px] max-[1200px]:text-[50px] max-[1150px]:text-[30px]"
             >
               KELAJAK KASBINI
               <span
@@ -308,6 +313,7 @@
                   font-family: Sora;
                   font-weight: 800;
                   font-style: ExtraBold;
+                  text-align: left;
 
                   line-height: 105.6px;
                   letter-spacing: 0px;
@@ -1431,194 +1437,7 @@
           </div>
         </div>
       </section>
-      <!-- <section>
-        <div class="container">
-          <div
-            id="accordion-color"
-            data-accordion="collapse"
-            class="rounded-base border border-default overflow-hidden shadow-xs"
-          >
-            <h2 id="accordion-color-heading-1 ">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-default gap-3"
-                data-accordion-target="#accordion-color-body-1"
-                aria-expanded="true"
-                aria-controls="accordion-color-body-1"
-              >
-                <span>What is Flowbite?</span>
-                <svg
-                  data-accordion-icon
-                  class="w-5 h-5 rotate-180 shrink-0"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m5 15 7-7 7 7"
-                  />
-                </svg>
-              </button>
-            </h2>
-            <div
-              id="accordion-color-body-1"
-              class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
-              aria-labelledby="accordion-color-heading-1"
-            >
-              <div class="p-4 md:p-5">
-                <p class="mb-2 text-body">
-                  Flowbite is an open-source library of interactive components
-                  built on top of Tailwind CSS including buttons, dropdowns,
-                  modals, navbars, and more.
-                </p>
-                <p class="text-body">
-                  Check out this guide to learn how to
-                  <a
-                    href="/docs/getting-started/introduction/"
-                    class="text-fg-brand hover:underline"
-                    >get started</a
-                  >
-                  and start developing websites even faster with components on
-                  top of Tailwind CSS.
-                </p>
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-2">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-fg-brand hover:bg-brand-softer gap-3"
-                data-accordion-target="#accordion-color-body-2"
-                aria-expanded="false"
-                aria-controls="accordion-color-body-2"
-              >
-                <span>Is there a Figma file available?</span>
-                <svg
-                  data-accordion-icon
-                  class="w-5 h-5 rotate-180 shrink-0"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m5 15 7-7 7 7"
-                  />
-                </svg>
-              </button>
-            </h2>
-            <div
-              id="accordion-color-body-2"
-              class="hidden  border border-s-0 border-e-0 border-t-0 border-b-default"
-              aria-labelledby="accordion-color-heading-2"
-            >
-              <div class="p-4 md:p-5">
-                <p class="mb-2 text-body">
-                  Flowbite is first conceptualized and designed using the Figma
-                  software so everything you see in the library has a design
-                  equivalent in our Figma file.
-                </p>
-                <p class="text-body">
-                  Check out the
-                  <a
-                    href="https://flowbite.com/figma/"
-                    class="text-fg-brand hover:underline"
-                    >Figma design system</a
-                  >
-                  based on the utility classes from Tailwind CSS and components
-                  from Flowbite.
-                </p>
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-3">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-fg-brand hover:bg-brand-softer gap-3"
-                data-accordion-target="#accordion-color-body-3"
-                aria-expanded="false"
-                aria-controls="accordion-color-body-3"
-              >
-                <span
-                  >What are the differences between Flowbite and Tailwind
-                  UI?</span
-                >
-                <svg
-                  data-accordion-icon
-                  class="w-5 h-5 rotate-180 shrink-0"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m5 15 7-7 7 7"
-                  />
-                </svg>
-              </button>
-            </h2>
-            <div
-              id="accordion-color-body-3"
-              class="hidden"
-              aria-labelledby="accordion-color-heading-3"
-            >
-              <div
-                class="p-4 md:p-5 border border-t-default border-b-0 border-x-0"
-              >
-                <p class="mb-2 text-body">
-                  The main difference is that the core components from Flowbite
-                  are open source under the MIT license, whereas Tailwind UI is
-                  a paid product. Another difference is that Flowbite relies on
-                  smaller and standalone components, whereas Tailwind UI offers
-                  sections of pages.
-                </p>
-                <p class="mb-2 text-body">
-                  However, we actually recommend using both Flowbite, Flowbite
-                  Pro, and even Tailwind UI as there is no technical reason
-                  stopping you from using the best of two worlds.
-                </p>
-                <p class="mb-2 text-body">
-                  Learn more about these technologies:
-                </p>
-                <ul class="ps-5 text-body list-disc">
-                  <li>
-                    <a
-                      href="https://flowbite.com/pro/"
-                      class="text-fg-brand hover:underline"
-                      >Flowbite Pro</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://tailwindui.com/"
-                      rel="nofollow"
-                      class="text-fg-brand hover:underline"
-                      >Tailwind UI</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+     
       <section class="bg-[#0B0E17]" style="padding-bottom: 30px">
         <div
           class="container bg-[#181B25]"
@@ -1642,7 +1461,7 @@
               padding: 15px 10px;
             "
             type="button"
-          >
+          >TALABA
             Bepul darsni boshlash
             <img class="max-w-[15px]" src="./images/image copy 5.png" alt="" />
           </button>
@@ -1663,7 +1482,7 @@
       </section>
     </main>
     <footer class="bg-[#0B0E17]" style="padding-top: 50px">
-      <div class="container oyoq grid grid-cols-4 gap-4">
+      <div class="container oyoq grid grid-cols-4 gap-[10px]">
         <div class="max-w-[293px]">
           <img class="max-w-[200px]" src="./images/logoblack.png" alt="" />
           <p class="text-[#A7AFC6]" style="margin: 15px 0px">

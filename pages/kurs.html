@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="">
+      <div class="navbar container">
+        <a href="../index.html"
+          ><img class="logo" src="../images/logo.png" alt=""
+        /></a>
+        <ul class="nav-links">
+          <li class="nav-li relative group duration-[0.3s] text-[19px]">
+            <a href="../index.html ">Bosh sahifa</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[0.3s] text-[19px]">
+            <a href="../pages/kurs.html">Kurslar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[0.3s] text-[19px]">
+            <a href="../pages/men.html">Mentorlar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[0.3s] text-[19px]">
+            <a href="../pages/narx.html">Narxlar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[0.3s] text-[19px]">
+            <a href="../pages/blog.html">Blog</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+            ></span>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <img
+            class="icon max-[487px]:hidden"
+            src="../images/iconheeader.png"
+            alt=""
+          />
+
+          <!-- Modal toggle -->
+          <button
+            data-modal-target="authentication-modal"
+            data-modal-toggle="authentication-modal"
+            class="text-white max-[487px]:hidden button-head bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+          >
+            Bepul boshlash
+          </button>
+
+          <!-- Main modal -->
+          <div
+            id="authentication-modal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative w-full max-w-[400px] max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative form bg-[#1B2135] max-w-[400px] w-full text-white border border-white-800 p-5 rounded-[30px]"
+              >
+                <!-- Modal header -->
+                <div class="flex items-center justify-between pb-4 md:pb-5">
+                  <h2 class="font-bold text-[25px]">KURSGA YOZILISH</h2>
+                  <button
+                    type="button"
+                    class="text-body p-3 hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                    data-modal-hide="authentication-modal"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18 17.94 6M18 18 6.06 6"
+                      />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <form action="">
+                  <p class="text-[#A7AFC6]">
+                    Ma'lumotlaringizni qoldiring, biz sizga 15 daqiqada aloqaga
+                    chiqamiz
+                  </p>
+                  <p class="text-[#A7AFC6]" style="margin-top: 20px">Email</p>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <p class="mt-2 text-[#A7AFC6]" style="margin-top: 20px">
+                    Ismingiz
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Masalan: Jasur"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <p class="mt-2 text-[#A7AFC6]" style="margin-top: 20px">
+                    Telefon raqami
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="+998 90 123 45 67"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <button
+                    class="bg-transparent button-main w-full"
+                    style="
+                      margin-top: 30px;
+                      padding: 10px 0;
+                      border-radius: 10px;
+                    "
+                  >
+                    Yuborish
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- drawer init and toggle -->
+        <div class="text-center hidden open">
+          <button
+            class="inline-flex items-center justify-center text-white bg-brand"
+            type="button"
+            data-drawer-target="drawer-disable-body-scrolling"
+            data-drawer-show="drawer-disable-body-scrolling"
+            data-drawer-body-scrolling="false"
+            aria-controls="drawer-disable-body-scrolling"
+          >
+            <img src="../images/menu.png" alt="" />
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-disable-body-scrolling"
+          class="fixed drawer-right top-0 left-0 pt-5 pl-3 z-40 h-screen overflow-y-auto transition-transform -translate-x-full text-white w-80"
+          tabindex="-1"
+          aria-labelledby="drawer-disable-body-scrolling-label"
+        >
+          <div class="pt-4 flex items-center">
+            <button
+              type="button"
+              data-drawer-hide="drawer-disable-body-scrolling"
+              aria-controls="drawer-disable-body-scrolling"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Close menu</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto" style="padding: 20px !important">
+            <img class="max-w-[100px] w-full" src="../images/logo.png" alt="" />
+            <ul
+              class="text-center space-y-2 mx-auto flex flex-col p-5 font-medium"
+              style="margin-top: 20px"
+            >
+              <li
+                class="relative text-[12px] group nav-li duration-[0.4s] max-w-[76px]"
+                style="margin-top: 10px"
+              >
+                <a href="">Bosh sahifa</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[48px]"
+                style="margin-top: 10px"
+              >
+                <a href="">Kurslar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[62px]"
+                style="margin-top: 10px"
+              >
+                <a href="">Mentorlar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[48px]"
+                style="margin-top: 10px"
+              >
+                <a href="">Narxlar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[12px] group nav-li duration-[0.3s] max-w-[30px]"
+                style="margin-top: 10px"
+              >
+                <a href="">Blog</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[0.3s] group-hover:w-full"
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bg-[#0B0E17]" style="padding: 50px 0">
+        <div class="container mx-auto">
+          <div class="">
+            <p class="text-center text-[#A7AFC6]">BIZNING MISSIYA</p>
+            <h1
+              class="text-center text-white text-[84px] font-bold max-[510px]:text-[70px] max-[430px]:text-[50px]"
+            >
+              BILIM HAMMAGA
+              <span class="text-[#7C5CFF] text-center"> TENG</span>
+              BO'LISHI KERAK.
+            </h1>
+            <p class="text-[#A7AFC6] text-center">
+              2020-yildan beri zamonaviy kasblarni o'rgatamiz — sifatli, amaliy
+              va halol. Bizning maqsadimiz — har bir hamyurtimizga xalqaro
+              darajadagi ta'limni yetkazishdir.
+            </p>
+          </div>
+          <div class="relative">
+            <img
+              class="max-w-[1216px] rounded-[30px] w-full"
+              style="margin-top: 40px; margin-left: auto; margin-right: auto"
+              src="../images/kurs.png"
+              alt=""
+            />
+            <div
+              class="bg-[#1B2135] card w-[160px] absolute top-[-15px] left-[48px]"
+              style="
+                border: 1px solid #9491916a;
+                border-radius: 9999px;
+                padding: 12px 0;
+              "
+            >
+              <p class="text-[#6B7391] text-center text-[12px]">
+                2020-yilda asos solingan
+              </p>
+            </div>
+            <div
+              class="bg-[#1B2135] bg-[#44EBBC33] card w-[130px] absolute bottom-[-20px] right-[48px] border border-[#44EBBC66]"
+              style="
+                border: 1px solid #9491916a;
+                border-radius: 9999px;
+                padding: 12px 0;
+              "
+            >
+              <p class="text-[#49E9BC] text-center text-[12px]">
+                ● 45 kishilik jamoa
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#0B0E17]">
+        <div class="container bg-[#181B25]" style="padding: 120px 0">
+          <h2 class="text-white text-[42px] text-center font-bold">
+            QANDAY ISHLAYDI?
+          </h2>
+          <div class="grid grid-cols-4 gap-5 service">
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[190px] h-[40px] flex justify-center"
+                src="../images/kurs1.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p class="text-[#6B7391] text-center">O'quvchi</p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[61px] h-[40px] inline-block mx-auto"
+                src="../images/kurs2.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p class="text-[#6B7391] text-center">Mentor</p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[61px] h-[40px] inline-block mx-auto"
+                src="../images/kurs3.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p class="text-[#6B7391] text-center">Kurs</p>
+            </div>
+            <div
+              class="max-w-[400px] w-full text-center flex flex-col items-center justify-center"
+            >
+              <img
+                class="w-[100px] h-[40px] inline-block mx-auto"
+                src="../images/kurs4.png"
+                style="margin-bottom: 5px"
+                alt=""
+              />
+              <p class="text-[#6B7391] text-center">Ishga joylashish</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
