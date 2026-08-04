@@ -82,6 +82,27 @@ header {
   padding: 20px !important;
 }
 
+@media (max-width: 1080px) {
+  .kurs-h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .kurs-hero {
+    display: block;
+  }
+  .kurs-sect {
+    text-align: center;
+  }
+}
+
+@media (max-width:1130px) {
+  .herokurs{
+    display: block;
+  }
+}
+
 @media (max-width: 830px) {
   .nav-links {
     display: none;
@@ -159,11 +180,11 @@ header {
   display: none;
 }
 
-
 @media (max-width: 500px) {
   .h4 {
     font-size: 30px;
-  }.text{
+  }
+  .text {
     font-size: 30px;
   }
 }
@@ -177,5 +198,11 @@ header {
   }
   .font-text {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .h1-head {
+    line-height: 1px;
   }
 }
