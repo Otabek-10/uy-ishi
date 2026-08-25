@@ -206,6 +206,97 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
+
+
+
+/* From Uiverse.io by mrpumps31232 */ 
+.loading-wave {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.loading-bar {
+  width: 20px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #3498db;
+  border-radius: 5px;
+  animation: loading-wave-animation 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loading-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes loading-wave-animation {
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 50px;
+  }
+
+  100% {
+    height: 10px;
+  }
+}
+
+
+.load {
+  background-color: #101421;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: off 5s forwards linear;
+}
+
+@keyframes off {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  80%{
+    opacity: 0.3;
+  }
+  90%{
+    opacity: 0.2;
+  }
+  95%{
+    opacity: 0.1;
+    z-index: -4;
+  }
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .main {
     width: 80%;

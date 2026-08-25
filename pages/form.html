@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilimlab</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Schoolbell&family=Skranji:wght@400;700&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="">
+      <div class="navbar container">
+        <a href="../index.html"
+          ><img class="logo" src="../images/logo.png" alt=""
+        /></a>
+        <ul class="nav-links">
+          <li class="nav-li relative group duration-[1s] text-[19px]">
+            <a href="../index.html ">Bosh sahifa</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[1s] text-[19px]">
+            <a href="../pages/kurs.html">Kurslar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[1s] text-[19px]">
+            <a href="../pages/kurs3.html">Narxlar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+            ></span>
+          </li>
+          <li class="nav-li relative group duration-[1s] text-[19px]">
+            <a href="../pages/kurs2.html">Turlar</a>
+            <span
+              class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+            ></span>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <img
+            class="icon max-[487px]:hidden"
+            src="../images/iconheeader.png"
+            alt=""
+          />
+
+          <!-- Modal toggle -->
+          <button
+            data-modal-target="authentication-modal"
+            data-modal-toggle="authentication-modal"
+            class="text-white max-[487px]:hidden button-head bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+          >
+            Bepul boshlash
+          </button>
+
+          <!-- Main modal -->
+          <div
+            id="authentication-modal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative w-full max-w-[400px] max-h-full">
+              <!-- Modal content -->
+              <div
+                class="relative form bg-[#1B2135] max-w-[400px] w-full text-white border border-white-800 p-5 rounded-[30px]"
+              >
+                <!-- Modal header -->
+                <div class="flex items-center justify-between pb-4 md:pb-5">
+                  <h2 class="font-bold text-[25px]">KURSGA YOZILISH</h2>
+                  <button
+                    type="button"
+                    class="text-body p-3 hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                    data-modal-hide="authentication-modal"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18 17.94 6M18 18 6.06 6"
+                      />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <form action="">
+                  <p class="text-[#A7AFC6]">
+                    Ma'lumotlaringizni qoldiring, biz sizga 15 daqiqada aloqaga
+                    chiqamiz
+                  </p>
+                  <p class="text-[#A7AFC6]" style="margin-top: 20px">Email</p>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <p class="mt-2 text-[#A7AFC6]" style="margin-top: 20px">
+                    Ismingiz
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="Masalan: Jasur"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <p class="mt-2 text-[#A7AFC6]" style="margin-top: 20px">
+                    Telefon raqami
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="+998 90 123 45 67"
+                    class="bg-[#10131C] text-[#6B739180] rounded-[16px]"
+                    style="padding: 10px 10px; width: 100%"
+                  />
+                  <button
+                    class="bg-transparent button-main w-full"
+                    style="
+                      margin-top: 30px;
+                      padding: 10px 0;
+                      border-radius: 10px;
+                    "
+                  >
+                    Yuborish
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- drawer init and toggle -->
+        <div class="text-center hidden open">
+          <button
+            class="inline-flex items-center justify-center text-white bg-brand"
+            type="button"
+            data-drawer-target="drawer-disable-body-scrolling"
+            data-drawer-show="drawer-disable-body-scrolling"
+            data-drawer-body-scrolling="false"
+            aria-controls="drawer-disable-body-scrolling"
+          >
+            <img src="../images/menu.png" alt="" />
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-disable-body-scrolling"
+          class="fixed drawer-right top-0 left-0 pt-5 pl-3 z-40 h-screen overflow-y-auto transition-transform -translate-x-full text-white w-80"
+          tabindex="-1"
+          aria-labelledby="drawer-disable-body-scrolling-label"
+        >
+          <div class="pt-4 flex items-center">
+            <button
+              type="button"
+              data-drawer-hide="drawer-disable-body-scrolling"
+              aria-controls="drawer-disable-body-scrolling"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Close menu</span>
+            </button>
+          </div>
+           <div class="py-5 overflow-y-auto" style="padding: 20px !important">
+            <img class="max-w-[100px] w-full" src="../images/logo.png" alt="" />
+            <ul
+              class="text-center space-y-2 mx-auto flex flex-col p-5 font-medium"
+              style="margin-top: 20px"
+            >
+              <li
+                class="relative text-[20px] group nav-li duration-[0.4s] max-w-[111px]"
+                style="margin-top: 10px"
+              >
+                <a href="../index.html">Bosh sahifa</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[63px]"
+                style="margin-top: 10px"
+              >
+                <a href="../pages/kurs.html">Kurslar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[24px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[62px]"
+                style="margin-top: 10px"
+              >
+                <a href="../pages/kurs3.html">Narxlar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[24px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                ></span>
+              </li>
+              <li
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[55px]"
+                style="margin-top: 10px"
+              >
+                <a href="../pages/kurs2.html">Turlar</a>
+                <span
+                  class="inline-block absolute bg-white left-[0] top-[27px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section style="padding: 50px 0" class="body">
+        <div class="container">
+          <title>Savolingiz bormi?</title>
+          <style>
+            :root {
+              --bg: #0a0e17;
+              --card: #131826;
+              --card-border: #232a3b;
+              --input-bg: #0d1220;
+              --input-border: #232a3b;
+              --text-primary: #f4f6fb;
+              --text-secondary: #8891a5;
+              --accent-teal: #3fd9c7;
+              --accent-purple: #7c7ff2;
+              --error: #ef4444;
+              --icon-purple: #8b8ff5;
+              --icon-teal: #2fd9b8;
+              --icon-orange: #f2a33f;
+              --icon-blue: #4d9bf5;
+            }
+            *{
+                color: white;
+            }
+            .body {
+                background-color:#0a0e17 ;
+            }
+             .wrap {
+              max-width: 1120px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 56px;
+              align-items: start;
+            }
+
+            /* ---------- LEFT SIDE ---------- */
+            .left h1 {
+              font-size: 44px;
+              font-weight: 800;
+              line-height: 1.15;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              margin-bottom: 36px;
+            }
+            .left h1 .accent {
+              background: linear-gradient(90deg, #7c7ff2, #3fd9c7);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            }
+
+            .info-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 16px;
+            }
+
+            .info-card {
+              background: var(--card);
+              border: 1px solid var(--card-border);
+              border-radius: 16px;
+              padding: 22px 20px;
+            }
+
+            .info-icon {
+              width: 38px;
+              height: 38px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: rgba(255, 255, 255, 0.04);
+              margin-bottom: 14px;
+            }
+            .info-icon svg {
+              width: 18px;
+              height: 18px;
+            }
+
+            .info-card .title {
+              font-size: 15px;
+              font-weight: 700;
+              margin-bottom: 4px;
+            }
+            .info-card .subtitle {
+              font-size: 13px;
+              color: var(--text-secondary);
+            }
+
+            /* ---------- RIGHT SIDE (FORM) ---------- */
+            .form-card {
+              background:
+                radial-gradient(
+                  circle at 80% 0%,
+                  rgba(124, 127, 242, 0.12),
+                  transparent 55%
+                ),
+                var(--card);
+              border: 1px solid var(--card-border);
+              border-radius: 24px;
+              padding: 36px 36px 30px;
+              position: relative;
+              overflow: hidden;
+            }
+
+            .form-card h2 {
+              font-size: 24px;
+              font-weight: 800;
+              margin-bottom: 26px;
+            }
+
+            .field {
+              margin-bottom: 20px;
+            }
+            .field label {
+              display: block;
+              font-size: 13.5px;
+              color: var(--text-secondary);
+              margin-bottom: 8px;
+            }
+            .field input,
+            .field select {
+              width: 100%;
+              background: var(--input-bg);
+              border: 1px solid var(--input-border);
+              border-radius: 12px;
+              padding: 14px 16px;
+              color: var(--text-primary);
+              font-size: 14.5px;
+              font-family: inherit;
+              outline: none;
+              transition:
+                border-color 0.15s ease,
+                box-shadow 0.15s ease;
+              appearance: none;
+              -webkit-appearance: none;
+            }
+            .field input::placeholder {
+              color: #5b6478;
+            }
+            .field input:focus,
+            .field select:focus {
+              border-color: var(--accent-purple);
+              box-shadow: 0 0 0 3px rgba(124, 127, 242, 0.15);
+            }
+
+            .select-wrap {
+              position: relative;
+            }
+            .select-wrap::after {
+              content: "";
+              position: absolute;
+              right: 16px;
+              top: 50%;
+              width: 10px;
+              height: 10px;
+              border-right: 2px solid var(--text-secondary);
+              border-bottom: 2px solid var(--text-secondary);
+              transform: translateY(-70%) rotate(45deg);
+              pointer-events: none;
+            }
+            .select-wrap select {
+              cursor: pointer;
+            }
+
+            .field.error input {
+              border-color: var(--error);
+              box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+            }
+            .error-msg {
+              display: none;
+              color: var(--error);
+              font-size: 12.5px;
+              margin-top: 7px;
+            }
+            .field.error .error-msg {
+              display: block;
+            }
+
+            .submit-btn {
+              width: 100%;
+              border: none;
+              border-radius: 14px;
+              padding: 17px 20px;
+              font-size: 15.5px;
+              font-weight: 700;
+              color: #0d1220;
+              background: linear-gradient(90deg, #7c7ff2, #3fd9c7);
+              cursor: pointer;
+              margin-top: 6px;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              transition:
+                opacity 0.15s ease,
+                transform 0.1s ease;
+            }
+            .submit-btn:hover {
+              opacity: 0.92;
+            }
+            .submit-btn:active {
+              transform: scale(0.995);
+            }
+            .submit-btn:disabled {
+              cursor: default;
+            }
+
+            .submit-btn.success {
+              background: linear-gradient(90deg, #2fd9b8, #3fd9c7);
+            }
+
+            .check-circle {
+              width: 19px;
+              height: 19px;
+              border-radius: 50%;
+              background: #0d1220;
+              display: none;
+              align-items: center;
+              justify-content: center;
+              flex-shrink: 0;
+            }
+            .submit-btn.success .check-circle {
+              display: flex;
+            }
+            .check-circle svg {
+              width: 12px;
+              height: 12px;
+              stroke: #3fd9c7;
+              stroke-width: 3;
+              fill: none;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-dasharray: 20;
+              stroke-dashoffset: 20;
+              animation: draw 0.35s ease forwards 0.05s;
+            }
+            @keyframes draw {
+              to {
+                stroke-dashoffset: 0;
+              }
+            }
+
+            .consent {
+              text-align: center;
+              font-size: 11.5px;
+              color: var(--text-secondary);
+              margin-top: 16px;
+              line-height: 1.5;
+            }
+
+            @media (max-width: 860px) {
+              .wrap {
+                grid-template-columns: 1fr;
+                gap: 36px;
+              }
+              .left h1 {
+                font-size: 34px;
+              }
+              .info-grid {
+                grid-template-columns: 1fr 1fr;
+              }
+            }
+            @media (max-width: 520px) {
+              body {
+                padding: 40px 16px;
+              }
+              .info-grid {
+                grid-template-columns: 1fr;
+              }
+              .form-card {
+                padding: 28px 22px 24px;
+              }
+            }
+          </style>
+
+          <div class="wrap">
+            <!-- LEFT -->
+            <div class="left">
+              <h1>
+                Savolingiz<br />bormi? <span class="accent">Yozing.</span>
+              </h1>
+
+              <div class="info-grid">
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#8b8ff5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="title">+998 71 200 00 00</div>
+                  <div class="subtitle">Qo'ng'iroq qiling</div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#2fd9b8"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div class="title">info@bilimlab.uz</div>
+                  <div class="subtitle">Email yozing</div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#f2a33f"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div class="title">Toshkent, Shayxontohur</div>
+                  <div class="subtitle">Manzilimiz</div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#4d9bf5"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                  </div>
+                  <div class="title">@bilimlab_support</div>
+                  <div class="subtitle">Telegram bot</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="form-card">
+              <h2>Bepul konsultatsiya oling</h2>
+
+              <form id="leadForm" novalidate>
+                <div class="field">
+                  <label for="fullName">To'liq ismingiz</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Aziz Rahimov"
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="field" id="phoneField">
+                  <label for="phone">Telefon raqamingiz</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+998"
+                    value="+998"
+                    autocomplete="tel"
+                  />
+                  <div class="error-msg">Iltimos, to'g'ri raqam kiriting</div>
+                </div>
+
+                <div class="field">
+                  <label for="direction">Sizni qiziqtirgan yo'nalish</label>
+                  <div class="select-wrap">
+                    <select id="direction">
+                      <option>Dasturlash (Full-stack)</option>
+                      <option>Frontend dasturlash</option>
+                      <option>Backend dasturlash</option>
+                      <option>Data Science</option>
+                      <option>Grafik dizayn</option>
+                      <option>Boshqa</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  <span class="check-circle"
+                    ><svg viewBox="0 0 24 24">
+                      <polyline points="4 12 9 18 20 6" /></svg
+                  ></span>
+                  <span id="btnLabel">Yuborish</span>
+                </button>
+
+                <div class="consent">
+                  "Yuborish" tugmasini bosish orqali siz shaxsiy
+                  ma'lumotlaringizni qayta ishlashga rozilik berasiz.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="https://cdn.jotfor.ms/agent/embedjs/01a03502b8f07000887d6898530235c4eb8f/embed.js"></script>
+    <script>
+      const form = document.getElementById("leadForm");
+      const phoneField = document.getElementById("phoneField");
+      const phoneInput = document.getElementById("phone");
+      const submitBtn = document.getElementById("submitBtn");
+      const btnLabel = document.getElementById("btnLabel");
+
+      function isValidUzPhone(value) {
+        const digits = value.replace(/\D/g, "");
+        // +998 followed by 9 digits = 12 digits total
+        return digits.length === 12 && digits.startsWith("998");
+      }
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const valid = isValidUzPhone(phoneInput.value);
+
+        if (!valid) {
+          phoneField.classList.add("error");
+          phoneInput.focus();
+          return;
+        }
+
+        phoneField.classList.remove("error");
+
+        // success state
+        submitBtn.disabled = true;
+        submitBtn.classList.add("success");
+        btnLabel.textContent = "Yuborildi";
+
+        setTimeout(function () {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("success");
+          btnLabel.textContent = "Yuborish";
+          form.reset();
+          phoneInput.value = "+998";
+        }, 2500);
+      });
+
+      phoneInput.addEventListener("input", function () {
+        if (phoneField.classList.contains("error")) {
+          phoneField.classList.remove("error");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bilimlab</title>
     <link rel="stylesheet" href="./css/style.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
@@ -40,6 +40,14 @@
     />
   </head>
   <body>
+    <!-- <div class="load">
+      <div class="loading-wave">
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+      </div>
+    </div> -->
     <header class="">
       <div class="navbar container">
         <a href="./index.html"
@@ -58,7 +66,7 @@
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
             ></span>
           </li>
-        
+
           <li class="nav-li relative group duration-[1s] text-[19px]">
             <a href="./pages/kurs3.html">Narxlar</a>
             <span
@@ -66,7 +74,7 @@
             ></span>
           </li>
           <li class="nav-li relative group duration-[1s] text-[19px]">
-            <a href="./pages/kurs2.html">Kurs Narxlari</a>
+            <a href="./pages/kurs2.html">Turlar</a>
             <span
               class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
             ></span>
@@ -233,39 +241,39 @@
               style="margin-top: 20px"
             >
               <li
-                class="relative text-[12px] group nav-li duration-[0.4s] max-w-[76px]"
+                class="relative text-[20px] group nav-li duration-[0.4s] max-w-[111px]"
                 style="margin-top: 10px"
               >
                 <a href="">Bosh sahifa</a>
                 <span
-                  class="inline-block absolute bg-white left-[0] top-[18px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                  class="inline-block absolute bg-white left-[0] top-[25px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
                 ></span>
               </li>
               <li
-                class="relative text-[12px] group nav-li duration-[1s] max-w-[48px]"
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[63px]"
                 style="margin-top: 10px"
               >
                 <a href="./pages/kurs.html">Kurslar</a>
                 <span
-                  class="inline-block absolute bg-white left-[0] top-[18px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                  class="inline-block absolute bg-white left-[0] top-[24px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
                 ></span>
               </li>
               <li
-                class="relative text-[12px] group nav-li duration-[1s] max-w-[48px]"
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[62px]"
                 style="margin-top: 10px"
               >
                 <a href="./pages/kurs3.html">Narxlar</a>
                 <span
-                  class="inline-block absolute bg-white left-[0] top-[18px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                  class="inline-block absolute bg-white left-[0] top-[24px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
                 ></span>
               </li>
               <li
-                class="relative text-[12px] group nav-li duration-[1s] max-w-[30px]"
+                class="relative text-[20px] group nav-li duration-[1s] max-w-[55px]"
                 style="margin-top: 10px"
               >
-                <a href="./pages/kurs2.html">Kurs narxi</a>
+                <a href="./pages/kurs2.html">Turlar</a>
                 <span
-                  class="inline-block absolute bg-white left-[0] top-[34px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
+                  class="inline-block absolute bg-white left-[0] top-[27px] h-[2px] w-[0] duration-[1s] group-hover:w-full"
                 ></span>
               </li>
             </ul>
@@ -326,11 +334,7 @@
               />
             </button>
             <div class="flex items-center gap-[10px]" style="margin-top: 10px">
-              <img
-                class="max-w-[150px]"
-                src="./images/image copy 3.png"
-                alt=""
-              />
+              <img class="max-w-[150px]" src="./images/headhero.png" alt="" />
               <div>
                 <p class="text-white font-bold text-[18px]">
                   12 000+ o'quvchi biz bilan
@@ -476,9 +480,10 @@
                 <img
                   style="
                     border-top-left-radius: 24px;
-                    border-top-right-radius: 24px; 
+                    border-top-right-radius: 24px;
                     height: 400px;
                     width: full;
+                    object-fit: cover;
                   "
                   src="./images/card1.png"
                   alt=""
@@ -532,12 +537,9 @@
                   </div>
                   <div
                     class="flex items-center justify-between"
-                    style="margin-top: 10px; padding-bottom: 10px"
+                    style="margin-top: 10px"
                   >
-                    <h2
-                      class="text-[white] text-[22px] font-bold"
-                      style="margin-top: 20px"
-                    >
+                    <h2 class="text-[white] text-[22px] font-bold">
                       1 200 000 so'm
                     </h2>
                     <a href="./pages/kurs2.html"
@@ -553,9 +555,10 @@
                 <img
                   style="
                     border-top-left-radius: 24px;
-                    border-top-right-radius: 24px; 
+                    border-top-right-radius: 24px;
                     height: 400px;
                     width: full;
+                    object-fit: cover;
                   "
                   src="./images/card2.png"
                   alt=""
@@ -609,7 +612,7 @@
                   </div>
                   <div
                     class="flex items-center justify-between"
-                    style="margin-top: 10px; padding-bottom: 10px"
+                    style="margin-top: 10px"
                   >
                     <h2
                       class="text-[white] text-[22px] font-bold"
@@ -630,9 +633,10 @@
                 <img
                   style="
                     border-top-left-radius: 24px;
-                    border-top-right-radius: 24px; 
+                    border-top-right-radius: 24px;
                     height: 400px;
                     width: full;
+                    object-fit: cover;
                   "
                   src="./images/card3.png"
                   alt=""
@@ -684,9 +688,7 @@
                       <p class="text-[#6B7391] text-[12px]">Sertifikat</p>
                     </div>
                   </div>
-                  <div
-                    class="flex items-center justify-between"
-                  >
+                  <div class="flex items-center justify-between">
                     <h2
                       class="text-[white] text-[22px] font-bold"
                       style="margin-top: 20px"
@@ -694,7 +696,11 @@
                       1 000 000 so'm
                     </h2>
                     <a href="./pages/kurs2.html"
-                      ><img class="w-[50px]" style="margin-top: 15px;" src="./images/aa.png" alt=""
+                      ><img
+                        class="w-[50px]"
+                        style="margin-top: 15px"
+                        src="./images/aa.png"
+                        alt=""
                     /></a>
                   </div>
                 </div>
@@ -706,9 +712,10 @@
                 <img
                   style="
                     border-top-left-radius: 24px;
-                    border-top-right-radius: 24px; 
+                    border-top-right-radius: 24px;
                     height: 400px;
                     width: full;
+                    object-fit: cover;
                   "
                   src="./images/card4.png"
                   alt=""
@@ -1144,7 +1151,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#0B0E17]" style="padding: 100px 0 ">
+      <section class="bg-[#0B0E17]" style="padding: 100px 0">
         <div class="container hero-sect flex items-center justify-evenly gap-5">
           <div class="max-w-[824px]">
             <div class="bg-[#FFB95533] rounded-[9999px] max-w-[160px]">
@@ -1206,7 +1213,7 @@
           <img
             class="max-w-[456px] rounded-[20px] image-class w-full"
             src="./images/section.png"
-            style="border: 1px solid #a7afc6;"
+            style="border: 1px solid #a7afc6"
             alt=""
           />
         </div>
@@ -1494,7 +1501,6 @@
           </div>
         </div>
       </section>
-
       <section class="bg-[#0B0E17]" style="padding-bottom: 30px">
         <div
           class="container bg-[#181B25] rounded-[30px]"
@@ -1547,7 +1553,7 @@
             src="./images/logoblack.png"
             alt=""
           />
-          <p class="text-[#A7AFC6]" style="margin: 15px ">
+          <p class="text-[#A7AFC6]" style="margin: 15px">
             Markaziy Osiyodagi eng zamonaviy onlayn ta'lim platformasi.
           </p>
           <div
@@ -1603,6 +1609,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jotfor.ms/agent/embedjs/01a03502b8f07000887d6898530235c4eb8f/embed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
     <script
@@ -1611,7 +1619,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
