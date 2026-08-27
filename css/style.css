@@ -205,11 +205,7 @@ input[type="range"]::-webkit-slider-thumb {
   pointer-events: auto;
   -webkit-appearance: none;
 }
-
-
-
-
-/* From Uiverse.io by mrpumps31232 */ 
+/* From Uiverse.io by mrpumps31232 */
 .loading-wave {
   width: 300px;
   height: 100px;
@@ -251,10 +247,7 @@ input[type="range"]::-webkit-slider-thumb {
   100% {
     height: 10px;
   }
-}
-
-
-.load {
+}.load {
   background-color: #101421;
   position: fixed;
   top: 0;
@@ -278,13 +271,13 @@ input[type="range"]::-webkit-slider-thumb {
   75% {
     opacity: 0.5;
   }
-  80%{
+  80% {
     opacity: 0.3;
   }
-  90%{
+  90% {
     opacity: 0.2;
   }
-  95%{
+  95% {
     opacity: 0.1;
     z-index: -4;
   }
@@ -292,12 +285,7 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 0;
     z-index: -5;
   }
-}
-
-
-
-
-@media screen and (max-width: 768px) {
+}@media screen and (max-width: 768px) {
   .main {
     width: 80%;
     margin-right: 5px;
@@ -435,6 +423,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
+
 @media (max-width: 400px) {
   .oyoq {
     grid-template-columns: repeat(1, 1fr);
@@ -467,8 +456,9 @@ input[type="range"]::-webkit-slider-thumb {
   .copy {
     display: block;
     padding: 20px 0;
-  }.nom2{
-    grid-template-columns: repeat(2 ,1fr);
+  }
+  .nom2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
