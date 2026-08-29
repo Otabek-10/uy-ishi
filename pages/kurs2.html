@@ -12,7 +12,7 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,7 +42,7 @@
     />
   </head>
   <body>
-       <div class="load">
+    <div class="load">
       <div class="loading-wave">
         <div class="loading-bar"></div>
         <div class="loading-bar"></div>
@@ -233,7 +233,7 @@
               <span class="sr-only">Close menu</span>
             </button>
           </div>
-           <div class="py-5 overflow-y-auto" style="padding: 20px !important">
+          <div class="py-5 overflow-y-auto" style="padding: 20px !important">
             <img class="max-w-[100px] w-full" src="../images/logo.png" alt="" />
             <ul
               class="text-center space-y-2 mx-auto flex flex-col p-5 font-medium"
@@ -281,8 +281,10 @@
       </div>
     </header>
     <main>
-      <section class="bg-[#101421]" style="padding-top: -20px ;">
-        <div class="container flex items-center justify-between gap-[80px] flexx">
+      <section class="bg-[#101421]" style="padding-top: -20px">
+        <div
+          class="container flex items-center justify-between gap-[80px] flexx"
+        >
           <div class="">
             <h1 class="text-[60px] first-h1 text-white font-bold">
               FRONTEND DASTURLASH — NOLDAN PRO DARAJAGACHA
@@ -364,7 +366,7 @@
                 <h3 class="text-white font-bold text-[20px]">2 kun 14:32:08</h3>
               </div>
             </div>
-            <a href="../form.html"
+            <a href="./form.html"
               ><button
                 class="text-[18px] text-white font-bold text-center w-full"
                 style="
@@ -405,12 +407,479 @@
           </div>
         </div>
       </section>
+      <section>
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          body {
+            margin: 0;
+            background: #0b0d14;
+            font-family: "Segoe UI", "Inter", sans-serif;
+          }
+
+          .faq-wrapper {
+            width: 100%;
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            background: transparent;
+          }
+
+          .faq-title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+            letter-spacing: -0.5px;
+          }
+
+          .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+          }
+
+          .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 22px 8px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.25s ease;
+            border-radius: 10px;
+          }
+
+          .faq-question:hover {
+            background: rgba(255, 255, 255, 0.03);
+          }
+
+          .faq-emoji {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 12px;
+            background: rgba(124, 156, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition:
+              background 0.3s ease,
+              transform 0.3s ease;
+          }
+
+          .faq-item.active .faq-emoji {
+            background: rgba(124, 156, 255, 0.18);
+            transform: scale(1.05);
+          }
+
+          .faq-question h3 {
+            margin: 0;
+            color: #f1f1f4;
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: color 0.25s ease;
+            flex: 1;
+          }
+
+          .faq-item.active .faq-question h3 {
+            color: #93aeff;
+          }
+
+          .faq-icon {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+          }
+
+          .faq-icon::before,
+          .faq-icon::after {
+            content: "";
+            position: absolute;
+            background: #b9bcc9;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition:
+              transform 0.3s ease,
+              background 0.3s ease;
+          }
+
+          .faq-icon::before {
+            width: 16px;
+            height: 2px;
+          }
+
+          .faq-icon::after {
+            width: 2px;
+            height: 16px;
+          }
+
+          .faq-item.active .faq-icon::before,
+          .faq-item.active .faq-icon::after {
+            background: #93aeff;
+          }
+
+          .faq-item.active .faq-icon::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+          }
+
+          .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition:
+              max-height 0.45s ease,
+              opacity 0.3s ease;
+            opacity: 0;
+          }
+
+          .faq-item.active .faq-answer {
+            opacity: 1;
+          }
+
+          .faq-answer-inner {
+            padding: 4px 8px 28px 64px;
+          }
+
+          .faq-answer-inner p {
+            margin: 0 0 16px 0;
+            color: #a3a6b5;
+            font-size: 0.95rem;
+            line-height: 1.7;
+          }
+
+          .faq-stats {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+          }
+
+          .faq-stat {
+            background: rgba(124, 156, 255, 0.08);
+            border: 1px solid rgba(124, 156, 255, 0.18);
+            border-radius: 10px;
+            padding: 10px 16px;
+            min-width: 110px;
+          }
+
+          .faq-stat .num {
+            color: #93aeff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            display: block;
+          }
+
+          .faq-stat .label {
+            color: #7d8098;
+            font-size: 0.75rem;
+            margin-top: 2px;
+            display: block;
+          }
+
+          .faq-list {
+            list-style: none;
+            margin: 0 0 4px 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .faq-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #c2c4d1;
+            font-size: 0.92rem;
+            line-height: 1.5;
+          }
+
+          .faq-list li .check {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            border-radius: 50%;
+            background: rgba(124, 156, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+          }
+
+          .faq-list li .check::after {
+            content: "";
+            width: 5px;
+            height: 8px;
+            border-right: 2px solid #93aeff;
+            border-bottom: 2px solid #93aeff;
+            transform: rotate(45deg) translate(-1px, -1px);
+          }
+
+          .faq-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+          }
+
+          .faq-tag {
+            background: rgba(255, 255, 255, 0.05);
+            color: #9ea1b3;
+            font-size: 0.78rem;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+          }
+        </style>
+
+        <div class="faq-wrapper container">
+          <h2 class="faq-title">Ko'p beriladigan savollar</h2>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-emoji">💻</div>
+              <h3>O'qish uchun noutbuk kerakmi?</h3>
+              <span class="faq-icon"></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Ha, mashg'ulotlarni to'liq o'zlashtirish uchun shaxsiy noutbuk
+                  bo'lgani ma'qul. Ammo hozircha bo'lmasa ham, xavotir olmang —
+                  quyidagi variantlar mavjud:
+                </p>
+                <ul class="faq-list">
+                  <li>
+                    <span class="check"></span>Markazimizdagi kompyuter
+                    xonasidan bepul foydalanish
+                  </li>
+                  <li>
+                    <span class="check"></span>Bo'lib-bo'lib to'lash orqali
+                    noutbuk sotib olish imkoniyati
+                  </li>
+                  <li>
+                    <span class="check"></span>Minimal talab: 8GB RAM, SSD disk
+                  </li>
+                </ul>
+                <div class="faq-tags">
+                  <span class="faq-tag">Windows / macOS</span>
+                  <span class="faq-tag">Bepul konsultatsiya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-emoji">💼</div>
+              <h3>Kursni tugatib ish topa olamanmi?</h3>
+              <span class="faq-icon"></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <div class="faq-stats">
+                  <div class="faq-stat">
+                    <span class="num">87%</span>
+                    <span class="label">Ishga joylashish</span>
+                  </div>
+                  <div class="faq-stat">
+                    <span class="num">4 oy</span>
+                    <span class="label">O'rtacha muddat</span>
+                  </div>
+                  <div class="faq-stat">
+                    <span class="num">120+</span>
+                    <span class="label">Hamkor kompaniya</span>
+                  </div>
+                </div>
+                <p>
+                  Kurs davomida real loyihalar ustida ishlaysiz va kuchli
+                  portfolio to'playsiz. Bitirgach:
+                </p>
+                <ul class="faq-list">
+                  <li>
+                    <span class="check"></span>Karyera markazi orqali ish
+                    intervyularga tayyorlanasiz
+                  </li>
+                  <li>
+                    <span class="check"></span>Hamkor kompaniyalarga rezyume
+                    yuboriladi
+                  </li>
+                  <li>
+                    <span class="check"></span>Portfolio va LinkedIn
+                    profilingizni birga tuzamiz
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-emoji">🗣️</div>
+              <h3>Darslar qaysi tilda olib boriladi?</h3>
+              <span class="faq-icon"></span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Barcha darslar
+                  <strong style="color: #e4e5ec">o'zbek tilida</strong> olib
+                  boriladi. Texnik atamalarning bir qismi ingliz tilida bo'lishi
+                  mumkin, lekin ustozlarimiz har bir tushunchani sodda tilda
+                  izohlaydi.
+                </p>
+                <ul class="faq-list">
+                  <li>
+                    <span class="check"></span>Video darslar — o'zbek tilida,
+                    subtitr bilan
+                  </li>
+                  <li>
+                    <span class="check"></span>Jonli mashg'ulotlar — savol-javob
+                    shaklida
+                  </li>
+                  <li>
+                    <span class="check"></span>Yordamchi ustozlar guruh chatida
+                    doimiy aloqada
+                  </li>
+                </ul>
+                <div class="faq-tags">
+                  <span class="faq-tag">🇺🇿 O'zbek</span>
+                  <span class="faq-tag">🇬🇧 Texnik terminlar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#0a0e17]" style="padding: 14px 0">
+        <div
+        style="padding: 10px;"
+          class="container mx-auto max-w-[760px] rounded-[38px] border border-[#1b2535] bg-gradient-to-b from-[#1d2638] to-[#101522] px-5 py-[50px] text-center"
+        >
+          <img
+            style="margin-top: 84px; margin-bottom: 15px; margin-left:auto; margin-right: auto;"
+            class="h-[80px] w-[80px]"
+            src="../images/formimage.png"
+            alt=""
+          />
+
+          <h2 class="text-[38px] font-normal text-white md:text-[60px]">
+            7 KUN KAFOLAT
+          </h2>
+
+          <p
+            style="margin-right: auto; margin-left: auto;"
+            class="mx-auto mt-[12px] max-w-[460px] text-[14px] leading-[22px] text-[#9ca3af]"
+          >
+            Kursimiz sifatiga 100% ishonamiz. Agar 7 kun ichida darslar sizga
+            yoqmasa, hech qanday savollarsiz pulingizni to'liq qaytarib beramiz.
+          </p>
+
+          <p
+          style="margin-top: 28px; margin-bottom: 96px;"
+            class=" flex cursor-pointer items-center justify-center gap-2 text-[13px] font-medium text-[#44EBBC]"
+          >
+            Kafolat shartlari bilan tanishish
+
+            <img
+              class="h-[12px] w-[12px]"
+              src="../images/formicon.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </section>
     </main>
+      <footer class="bg-[#0B0E17]" style="padding-top: 50px">
+      <div class="container oyoq grid grid-cols-4 gap-[100px]">
+        <div class="max-w-[293px]">
+          <img
+            class="max-w-[200px] w-full"
+            style="margin-right: auto; margin-left: auto"
+            src="../images/logoblack.png"
+            alt=""
+          />
+          <p class="text-[#A7AFC6]" style="margin: 15px">
+            Markaziy Osiyodagi eng zamonaviy onlayn ta'lim platformasi.
+          </p>
+          <div
+            class="flex items-center gap-2"
+            style="margin-right: auto; margin-left: auto"
+          >
+            <img
+              class="w-[50px]"
+              style="margin-right: auto; margin-left: auto"
+              src="../images/foot1.png"
+              alt=""
+            />
+            <img
+              class="w-[50px]"
+              style="margin-right: auto; margin-left: auto"
+              src="../images/foot2.png"
+              alt=""
+            />
+            <img
+              class="w-[50px]"
+              style="margin-right: auto; margin-left: auto"
+              src="../images/foot3.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Platforma</p>
+            <li class="text-[#A7AFC6] cursor-pointer">Kurslar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Mentorlar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Sertifikatlar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Hamkorlik</li>
+          </ul>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Yordam</p>
+            <li class="text-[#A7AFC6] cursor-pointer">Bog'lanish</li>
+            <li class="text-[#A7AFC6] cursor-pointer">FAQ</li>
+            <li class="text-[#A7AFC6] cursor-pointer">To'lovlar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Shartlar</li>
+          </ul>
+        </div>
+        <div class="">
+          <ul>
+            <p class="text-white font-bold">Kompaniya</p>
+            <li class="text-[#A7AFC6] cursor-pointer">Biz haqimizda</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Vakansiyalar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Kurslar</li>
+            <li class="text-[#A7AFC6] cursor-pointer">Maxfiylik siyosati</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
 
+        question.addEventListener("click", () => {
+          const isActive = item.classList.contains("active");
 
+          document.querySelectorAll(".faq-item").forEach((other) => {
+            other.classList.remove("active");
+            other.querySelector(".faq-answer").style.maxHeight = null;
+          });
 
-
-
+          if (!isActive) {
+            item.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+    </script>
     <script src="https://cdn.jotfor.ms/agent/embedjs/01a03502b8f07000887d6898530235c4eb8f/embed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script
