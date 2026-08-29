@@ -84,14 +84,7 @@ header {
 
 .form {
   padding: 20px !important;
-}
-
-.active button {
-  background-color: #cabeff;
-  color: #10131c;
-}
-
-.main {
+}.main {
   padding-top: 20px;
   transition: transform 0.2s;
   width: 500px;
