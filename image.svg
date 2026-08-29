@@ -1,0 +1,20 @@
+<svg width="100%" viewBox="0 0 680 680" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">BILIMLAB icon</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Dark rounded-square icon with an open book made of two purple-gradient pages and a rising spark above the spine, symbolizing knowledge and learning</desc>
+<defs>
+<linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#12121a"/>
+<stop offset="1" stop-color="#1c1a2e"/>
+</linearGradient>
+<linearGradient id="pageg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#8b7bff"/>
+<stop offset="1" stop-color="#5a3fe0"/>
+</linearGradient>
+</defs>
+<rect x="40" y="40" width="600" height="600" rx="130" fill="url(#bgg)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M340 300 L340 470 Q340 440 250 430 L190 425 Q180 424 180 414 L180 260 Q180 250 190 251 L250 256 Q340 264 340 300 Z" fill="url(#pageg)" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M340 300 L340 470 Q340 440 430 430 L490 425 Q500 424 500 414 L500 260 Q500 250 490 251 L430 256 Q340 264 340 300 Z" fill="url(#pageg)" opacity="0.75" style="stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.75;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="340" y1="300" x2="340" y2="470" stroke="#0f0e1a" stroke-width="3" style="fill:rgb(0, 0, 0);stroke:rgb(15, 14, 26);color:rgb(11, 11, 11);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<circle cx="340" cy="215" r="14" fill="#a78bfa" style="fill:rgb(167, 139, 250);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M340 175 L340 195 M310 195 L322 205 M370 195 L358 205" stroke="#a78bfa" stroke-width="6" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(167, 139, 250);color:rgb(11, 11, 11);stroke-width:6px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:anthropic-sans, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>

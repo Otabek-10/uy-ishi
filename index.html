@@ -40,6 +40,60 @@
     />
   </head>
   <body>
+    <style>
+      /* Orqa fonni xira (blur) qiluvchi konteyner */
+      .ai-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4); /* Yengil qorong'ulash */
+        backdrop-filter: blur(8px); /* Blur effekti */
+        -webkit-backdrop-filter: blur(8px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+        cursor: pointer;
+      }
+
+      /* O'rtadagi AI vidjet */
+      .ai-widget {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border: 2px solid #007bff;
+        border-radius: 30px;
+        padding: 15px 25px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        font-family: sans-serif;
+      }
+
+      .ai-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+      }
+
+      .ai-text {
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+      }
+    </style>
+
+    <div class="ai-overlay" id="aiOverlay" style="display: none">
+      <div class="ai-widget" id="aiWidget">
+        <span class="ai-icon">
+          <img width="35" src="./image.svg" alt="AI" />
+        </span>
+
+        <span class="ai-text" id="aiText"> Eshitish uchun bosing ... </span>
+      </div>
+    </div>
+
     <div class="load">
       <div class="loading-wave">
         <div class="loading-bar"></div>
@@ -1644,6 +1698,44 @@
             items: 3,
           },
         },
+      });
+    </script>
+    <script>
+      let isPlayed = false;
+
+      const loader = document.querySelector(".load");
+      const aiOverlay = document.getElementById("aiOverlay");
+      const aiText = document.getElementById("aiText");
+
+      window.addEventListener("load", function () {
+        // Loading tugagandan keyin
+        setTimeout(() => {
+          loader.style.display = "none";
+
+          // Endi AI oynasi chiqadi
+          aiOverlay.style.display = "flex";
+        }, 2000);
+      });
+
+      // AI oynasiga bosilganda gapiradi
+      aiOverlay.addEventListener("click", function () {
+        if (isPlayed) return;
+
+        isPlayed = true;
+
+        aiText.innerText = "AI gapirmoqda...";
+
+        const audio = new Audio("au.mp3");
+
+        audio.play();
+
+        audio.onended = function () {
+          aiOverlay.style.opacity = "0";
+
+          setTimeout(() => {
+            aiOverlay.style.display = "none";
+          }, 500);
+        };
       });
     </script>
   </body>

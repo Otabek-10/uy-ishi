@@ -89,5 +89,5 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 
 
 
-
+document.addEventListener("click", playVoice);
 
